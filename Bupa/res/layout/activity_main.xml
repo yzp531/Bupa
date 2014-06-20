@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bupa_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BasicDetails" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/healthyheartlogoheaderID"
+            android:layout_width="33dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            android:src="@drawable/healthyheartlogoheader" />
+
+        <ImageView
+            android:id="@+id/progress1barID"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/healthyheartlogoheaderID"
+            android:padding="0dp"
+            android:src="@drawable/progressabar" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@color/explanationTextColor" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewline"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topspacing"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/bupa_itembackground" >
+
+                <TextView
+                    android:id="@+id/sexTextView"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/RLcontentSpacing"
+                    android:text="@string/sexExplanation"
+                    android:textColor="@color/explanationTextColor"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFemale"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/RLcontentSpacing"
+                    android:background="@drawable/femalenormal" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonMaleSelected"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/imageButtonFemale"
+                    android:background="@drawable/maleselected" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/itemspacing"
+                android:background="@color/bupa_itembackground" >
+
+                <TextView
+                    android:id="@+id/enthnicityTextView"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/RLcontentSpacing"
+                    android:text="@string/enthnicityExplanation"
+                    android:textColor="@color/explanationTextColor"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerNthnicity"
+                    android:layout_width="@dimen/textFieldWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/RLcontentSpacing"
+                    android:drawSelectorOnTop="false"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/itemspacing"
+                android:background="@color/bupa_itembackground"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/birthTextView"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/RLcontentSpacing"
+                    android:text="@string/birthExplanation"
+                    android:textColor="@color/explanationTextColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/textAge"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/RLcontentSpacing"
+                    android:background="@color/explanationTextColor"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/itemspacing"
+                android:background="@color/bupa_itembackground" >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/RLcontentSpacing"
+                    android:text="@string/weightExplanation"
+                    android:textColor="@color/explanationTextColor"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerWeight"
+                    android:layout_width="@dimen/textFieldWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/RLcontentSpacing" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/itemspacing"
+                android:background="@color/bupa_itembackground" >
+
+                <TextView
+                    android:id="@+id/heightTextView"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/RLcontentSpacing"
+                    android:text="@string/heightExplanation"
+                    android:textColor="@color/explanationTextColor"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerHeight"
+                    android:layout_width="@dimen/textFieldWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/RLcontentSpacing" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/itemspacing"
+                android:background="@color/bupa_itembackground"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/postcodeTextView"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/RLcontentSpacing"
+                    android:text="@string/postcodeExplanation"
+                    android:textColor="@color/explanationTextColor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/postcodeEditText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/explanationTextColor"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imageButtonNext"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="@dimen/topspacing"
+                android:background="@drawable/nextbtn"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

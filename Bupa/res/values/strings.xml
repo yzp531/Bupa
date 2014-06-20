@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="app_name">Bupa</string>
+    <string name="action_settings">settings</string>
+
+    <!-- 步骤1 -->
+    <string name="sexExplanation">Are you male or female?</string>
+    <string name="enthnicityExplanation">What is your enthnicity?</string>
+    <string name="birthExplanation">Your age?</string>
+    <string name="weightExplanation">Your weight?</string>
+    <string name="heightExplanation">Your height?</string>
+    <string name="postcodeExplanation">What is your postcode?</string>
+    <!-- 步骤2 -->
+    <string name="explanation1">Do you smoke?</string>
+    <string name="explanation2">Do you have diabetes?</string>
+    <string name="explanation3">Are you on blood pressure treatment?</string>
+    <string name="explanation4">Do you have Rheumatoid arthritis?</string>
+    <string name="explanation5">Do you have chronic kidney disease?</string>
+    <string name="explanation6">Have any of your lst degree relatives had angina or a heart attack below age 60?</string>
+    <string name="explanation7">Your cholesterol/HDL ratio</string>
+    <string name="explanation8">Your systolic blood pressure(mmHq)</string>
+    <string name="explanation9">Do you have AF?</string>
+
+    <!-- Advice related strings -->
+    <string name="advice_txt1">BUPA ADVICE</string>
+    <string name="advice_txt2">Congratulations! Your score indicates that you have a very healthy heart for your age, and are at very low 
+        risk of suffering heart complications in the next 10 years.\n\nIt is important to stay healthy, so make sure you follow the guidelines 
+        for optimum heart health:</string>
+    <string name="advice_txt3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non</string>
+    <string name="advice_txt4">2 - Take regular exercise\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+	    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</string>
+    <string name="advice_txt5">3 - Have regular check-ups\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</string>
+    <string name="advice_txt6">Your Score:</string>
+    <string name="advice_txt7">Start Again</string>
+    <string name="advice_txt8">GET ADVICE AS SOON AS POSSIBLE</string>
+
+    <!-- The test results page texts -->
+    <string name="testres_txt1">YOUR RESULTS</string>
+    <string name="testres_txt2">Risk of having a heart attack or stroke within the next 10 years.</string>
+    <string name="testres_txt3">In other words, in a crowd of 100 people with the same risk factors as you, 4 are likely to 
+        have a heart attack or stroke within the next 10 years.</string>
+    <string name="testres_txt4">4.5% - People of your age, sex and ethnicity typically score.</string>
+    <string name="testres_txt5">32 - Your QRISK heart age.</string>
+    <string name="testres_txt6">More about these figures</string>
+    <string name="testres_txt7">See what your result means</string>
+    <string name="testres_txt8">Start again</string>
+    <string name="Apps">APPS TO HELP YOU KEEP YOUR RISK LOW:</string>
+    <string name="bupa_miles">BUPA GROUND MILES</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do</string>
+    <string name="firstin">READY! READ AND ACCEPT THE DISCLAIMER TO SEE RESULTS</string>
+
+</resources>
